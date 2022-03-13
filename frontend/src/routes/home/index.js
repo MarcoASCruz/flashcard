@@ -5,7 +5,7 @@ import Card from "../../components/Card";
 const Home = () => (
   <section style="padding-top: 50px">
     <div class={S.ucentertext}>
-      <h2 class={S.headingsecondary}>What this word means?</h2>
+      <h2 class={S.headingsecondary}>What does this word mean?</h2>
       <Card />
     </div>
   </section>
