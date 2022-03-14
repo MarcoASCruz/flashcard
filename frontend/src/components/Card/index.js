@@ -1,7 +1,6 @@
 import { h } from "preact";
 import { useState } from "preact/hooks";
 import S from "./styles.css";
-import LikeIcon from "../../assets/icons/like.png";
 
 const Card = () => {
   const [reveal, setReveal] = useState(false);
@@ -29,26 +28,11 @@ const Card = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          gap: 10,
-        }}
-      >
-        <a
-          onClick={toggleReveal}
-          class={`${S.btn} ${S.answer} ${S.like__btn} ${
-            reveal ? S.reveal : S.hide
-          }`}
-        >
+      <div class={`${S.btn__wrapper} ${reveal ? S.reveal : S.hide}`}>
+        <a onClick={toggleReveal} class={`${S.btn} ${S.like__btn}`}>
           I got it!
         </a>
-        <a
-          onClick={toggleReveal}
-          class={`${S.btn} ${S.answer} ${S.dislike__btn} ${
-            reveal ? S.reveal : S.hide
-          }`}
-        >
+        <a onClick={toggleReveal} class={`${S.btn} ${S.dislike__btn}`}>
           Missed
         </a>
       </div>

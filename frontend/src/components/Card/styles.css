@@ -38,7 +38,6 @@
         */
 }
 
-
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   padding: .5rem 1rem;
@@ -80,20 +79,6 @@
   background-color: #fff;
 }
 
-.btn.answer {
-  flex-grow: 1;
-  color: #fff;
-  margin: 2rem 0;
-  animation: fadeOutBottom 1s;
-  opacity: 0;
-  animation-timing-function: ease-out;
-}
-
-.btn.answer.reveal {
-  animation: fadeInBottom 1s;
-  opacity: 1;
-}
-
 .btn.like__btn {
   background-color: #00b894;
 }
@@ -102,13 +87,27 @@
   background-color: #d63031;
 }
 
-.btn.dislike__btn img {
-  transform: rotate(180deg);
-}
-
 .sectionplans {
   width: 20rem;
   margin: 0 auto;
+}
+
+.btn__wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.btn__wrapper .btn {
+  flex-grow: 1;
+  color: #fff;
+  margin: 2rem 0;
+  /* animation: fadeOutBottom 1s; */
+  opacity: 0;
+}
+
+.btn__wrapper.reveal .btn {
+  animation: fadeInBottom 1s;
+  opacity: 1;
 }
 
 .card {
