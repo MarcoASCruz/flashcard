@@ -10,3 +10,9 @@
 		1. it will return the default number of flashcards (10).
 	2. http://127.0.0.1:5000/flashcard/<numb_cards>
 		1. for number of cards different from 10. Notice that 1 <= numb_cards <= 50
+
+# Run frontend
+1. Go to `frontend` folder
+2. Run `npm run dev`
+
+Enjoy the game 🙌
