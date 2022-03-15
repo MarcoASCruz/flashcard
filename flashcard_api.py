@@ -1,7 +1,9 @@
 from flask import Flask
 from core import Flashcard
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, resources={r"/flashcard/*": {"origins": "*"}})
 
 @app.route("/flashcard")
 def get_flash_cards():

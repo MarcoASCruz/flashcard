@@ -1,0 +1,28 @@
+
+.ucentertext {
+  text-align: center !important;
+}
+
+.umarginbottomsmall {
+  margin-bottom: 1.5rem !important;
+}
+
+.umarginbottommedium {
+  margin-bottom: 4rem !important;
+}
+
+.umargintopbig {
+  margin-top: 5rem !important;
+}
+
+.headingsecondary {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #444;
+}
