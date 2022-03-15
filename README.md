@@ -13,6 +13,7 @@
 
 # Run frontend
 1. Go to `frontend` folder
-2. Run `npm run dev`
+2. Run `npm install`
+3. Run `npm run dev`
 
 Enjoy the game 🙌
